@@ -1,7 +1,8 @@
+@import url('https://fonts.googleapis.com/css?family=Share+Tech+Mono');
 @import url('https://fonts.googleapis.com/css?family=VT323');
 
 * {
-  font-family: 'VT323', sans-serif;
+  font-family: 'Share Tech Mono', monospace;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -12,44 +13,43 @@ html, body {
   height: 100%;
   overflow: hidden;
   background: black;
+  color: #33ccff;
+}
+
+h1, h2 {
+  letter-spacing: .2rem;
+  text-align: center;
 }
 
 #clock {
   position: relative;
   width: 380px;
-  top: 35%;
+  top: 30%;
   margin: 0 auto;
+}
+
+#clock .title {
+  font-size: 3rem;
+}
+
+#clock .subtitle {
+  margin-bottom: 32px;
 }
 
 .column {
   float: left;
 }
 
-.time h1 {
+.time {
   position: relative;
-  color: #33ccff;
-  font-size: 2.5rem;
-  letter-spacing: .2rem;
-  font-weight: lighter;
-  text-align: center;
 }
 
 .time.minutes {
-  position: relative;
   left: 64px;
 }
 
 .time.seconds {
-  position: relative;
   left: 128px;
-}
-
-.bit h3 {
-  position: relative;
-  top: 16px;
-  font-size: 2rem;
-  text-align: center;
-  color: white;
 }
 
 .bit {

@@ -13,13 +13,13 @@ $(function() {
     min = addLeadingZero(min);
     sec = addLeadingZero(sec);
 
-    $('.hours .text').text(hrs);
-    $('.minutes .text').text(min);
-    $('.seconds .text').text(sec);
-
     render(converter(hrs), "h");
     render(converter(min), "m");
     render(converter(sec), "s");
+
+    $('.hours .display').text(hrs);
+    $('.minutes .display').text(min);
+    $('.seconds .display').text(sec);
 
   }
 
@@ -34,6 +34,24 @@ $(function() {
         else $(t).css({'opacity' : 1});
       }
     }
+  }
+
+  function fColumn(value)
+  {
+    var str = value.toString();
+    if(str.length == 1) str = "0" + str;
+    var fDigit = parseInt(str.charAt(1));
+    var fColumn = decimalToBinary(fDigit, 4);
+    return fColumn;
+  }
+
+  function sColumn(value)
+  {
+    var str = value.toString();
+    if(str.length == 1) str = "0" + str;
+    var sDigit = parseInt(str.charAt(0));
+    var sColumn = decimalToBinary(sDigit, 3);
+    return sColumn;
   }
 
   function converter(value)

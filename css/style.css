@@ -61,3 +61,11 @@ body {
   background: black;
   box-shadow: none;
 }
+
+@media screen and (min-width: 375px) {
+  .bit {
+    width: 32px;
+    height: 32px;
+    margin: 4px;
+  }
+}

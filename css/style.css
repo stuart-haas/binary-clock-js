@@ -39,9 +39,17 @@ footer, h2 {
 }
 
 #clock {
-  width: 380px;
+  width: 456px;
   top: 25%;
   margin: 0 auto;
+}
+
+.time.minutes {
+  left: 32px;
+}
+
+.time.seconds {
+  left: 64px;
 }
 
 .display {
@@ -66,8 +74,9 @@ footer, h2 {
   box-shadow: none;
 }
 
-@media screen
-and (max-width: 768px)
+@media only screen
+and (min-width: 320px)
+and (max-device-width: 768px)
 and (orientation: landscape)
 {
   #clock {

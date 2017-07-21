@@ -1,0 +1,51 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: black;
+}
+
+#clock {
+  position: absolute;
+  width: 480px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-65%, -50%);
+}
+
+.column {
+  float: left;
+}
+
+.time h1 {
+  position: relative;
+  color: #33ccff;
+  text-align: center;
+}
+
+.time.minutes {
+  position: relative;
+  left: 64px;
+}
+
+.time.seconds {
+  position: relative;
+  left: 128px;
+}
+
+.bit {
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  background: #33ccff;
+  box-shadow: 0 0 8px #33ccff;
+}
+
+.bit.blank {
+  background: black;
+  box-shadow: none;
+}

@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css?family=VT323');
+
 * {
+  font-family: 'VT323', sans-serif;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: Arial, sans-serif;
 }
 
 body {
@@ -14,7 +16,7 @@ body {
   width: 480px;
   top: 50%;
   left: 50%;
-  transform: translate(-65%, -50%);
+  transform: translate(-55%, -50%);
 }
 
 .column {
@@ -24,6 +26,9 @@ body {
 .time h1 {
   position: relative;
   color: #33ccff;
+  font-size: 2.5rem;
+  letter-spacing: .2rem;
+  font-weight: lighter;
   text-align: center;
 }
 
@@ -37,12 +42,21 @@ body {
   left: 128px;
 }
 
+.bit h3 {
+  position: relative;
+  top: 16px;
+  font-size: 2rem;
+  text-align: center;
+  color: white;
+}
+
 .bit {
-  width: 64px;
-  height: 64px;
+  width: 48px;
+  height: 48px;
   margin: 8px;
   background: #33ccff;
-  box-shadow: 0 0 8px #33ccff;
+  box-shadow: 0 0 16px #33ccff;
+  transition: all .5s ease-out;
 }
 
 .bit.blank {

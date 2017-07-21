@@ -1,2 +1,1 @@
-# BINARY 
-## A numbers game
+# BINARY CLOCK 

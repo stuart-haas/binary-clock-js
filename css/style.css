@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css?family=Share+Tech+Mono');
-@import url('https://fonts.googleapis.com/css?family=VT323');
 
 * {
   font-family: 'Share Tech Mono', monospace;
@@ -21,35 +20,20 @@ h1, h2 {
   text-align: center;
 }
 
-#clock {
-  position: relative;
-  width: 380px;
-  top: 30%;
-  margin: 0 auto;
-}
-
-#clock .title {
+.title {
   font-size: 3rem;
 }
 
-#clock .subtitle {
-  margin-bottom: 32px;
+#clock {
+  width: 380px;
+  top: 25%;
+  margin: 0 auto;
 }
 
-.column {
-  float: left;
-}
-
-.time {
+#clock, .time {
   position: relative;
-}
-
-.time.minutes {
-  left: 64px;
-}
-
-.time.seconds {
-  left: 128px;
+  display: flex;
+  flex-direction: row;
 }
 
 .bit {
@@ -66,10 +50,44 @@ h1, h2 {
   box-shadow: none;
 }
 
-@media screen and (min-width: 375px) {
+@media only screen
+and (min-width: 320px)
+and (max-width: 321px)
+and (orientation: portrait)
+{
   .bit {
-    width: 32px;
-    height: 32px;
-    margin: 4px;
+    width: 39px;
+    height: 39px;
+    margin: 7px;
+  }
+}
+
+@media only screen
+and (min-width: 321px)
+and (max-width: 375px)
+and (orientation: portrait)
+{
+  .bit {
+    width: 48px;
+    height: 48px;
+    margin: 7px;
+  }
+}
+
+@media only screen
+and (min-width: 414px)
+and (orientation: landscape)
+{
+  #clock {
+    top: 5%;
+  }
+}
+
+@media only screen
+and (min-width: 768px)
+{
+  .bit {
+    width: 48px;
+    height: 48px;
   }
 }

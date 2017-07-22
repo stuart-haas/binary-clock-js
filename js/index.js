@@ -2,7 +2,6 @@ $(function() {
 
   function update()
   {
-
     var date = new Date();
 
     let hrs = date.getHours();
